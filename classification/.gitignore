@@ -208,8 +208,4 @@ __marimo__/
 
 
 hackathon_types*
-*.pickle
-*.pkl
-*.dat
-*.csv
 .DS_Store
