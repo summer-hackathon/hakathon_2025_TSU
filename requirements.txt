@@ -1,0 +1,10 @@
+matplotlib==3.9.4
+matplotlib-inline==0.1.7
+nltk==3.9.1
+numpy==2.0.2
+pandas==2.3.0
+plotly==6.2.0
+scikit-learn==1.6.11
+streamlit==1.46.1
+torch==2.7.1
+torchvision==0.22.1
