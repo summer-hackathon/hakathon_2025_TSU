@@ -8,7 +8,7 @@ from tokenizer import tokenize
 
 uri_classification = 'classification/'
 
-with open(f'{uri_classification}name_type_pipeline.pkl', 'rb') as file:
+with open(f'{uri_classification}name_pipeline.pkl', 'rb') as file:
         loaded_cat_pipeline = pickle.load(file)
 
 with open(f'{uri_classification}target_pipeline.pkl', 'rb') as file:
@@ -47,7 +47,7 @@ st.text("""Example:
 name = st.text_input('Enter text')
 
 if name:
-    pred = pd.Series([name], name='data')
+    pred = pd.Series(name, name='data')
 
     proba = loaded_cat_pipeline.predict_proba(pred)
 
